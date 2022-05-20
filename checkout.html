@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Checkout</title>
+    <link href="assets/style.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">OVO</div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <!-- <li><a href="#">Limited</a></li>
+                    <li><a href="#">Sales</a></li> -->
+                </ul>
+            </nav>
+            <div class="side-header">
+                <!-- <div class="side-content cart">
+                    <span class="material-symbols-outlined">
+                        shopping_cart
+                    </span>
+                </div> -->
+                <div class="side-content profile">
+                    <span class="material-symbols-outlined">
+                        person
+                    </span>
+                </div>
+                <div class="mini-profile-box-container">
+                    <div class="mini-profile-box">
+                        <div class="mini-profile-name">Placeholder</div>
+                        <a href="profile-page.html" class="mini-profile home">
+                            <span>My Account</span>
+                        </a>
+                        <a href="checkout.html" class="mini-profile orders">
+                            <span>My Orders</span>
+                        </a>
+                        <button class="mini-profile logout">Logout</button>
+                        <div class="confirmation-box">
+                            <h4>Are you sure you want to Logout?</h4>
+                            <button class="confirm no">No</button>
+                            <button class="confirm yes">Yes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="credential-container">
+        <div class="credential login"><a href="credentials.html">Login</a></div>
+        <div class="credential sign"><a href="credentials.html">Sign Up</a></div>
+    </div>
+    <main class="no-margin">
+        <div class="checkout-wrapper screen-height">
+            <div class="checkout-container">
+                <div class="checkout-cart">
+                    <div class="checkout-header">
+                        <h1>Shopping Cart</h1>
+                    </div>
+                    <div class="checkout-body">
+                        <div class="checkout-reminder">
+                            Cart is Empty
+                            <span class="material-symbols-outlined">
+                                sentiment_dissatisfied
+                            </span>
+                        </div>
+                        <table class="checkout-cart-products">
+                            <thead>
+                                <tr class="table-header">
+                                    <th style="width: 300px;">Product</th>
+                                    <th>Size</th>
+                                    <th>Type</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- <tr class="checkout-product">
+                                    <td class="checkout-product-detail">
+                                        <div class="checkout-product-img">
+                                            <img src="assets/img/store-men/white-shirt.png">
+                                        </div>
+                                        <div class="checkout-product-description">
+                                            <h3 class="checkout-product-name">Lorem Lorem Lorem Lorem Lorem Lorem
+                                                Lorem</h3>
+                                            <div class="checkout-product-type">Jacket</div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td-style checkout-product-size">XL</div>
+                                    </td>
+                                    <td>
+                                        <div class="td-style checkout-product-brand">Adidas</div>
+                                    </td>
+                                    <td>
+                                        <div class="td-style checkout-product-price">3999</div>
+                                    </td>
+                                    <td class="remove-from-cart">
+                                        <button class="remove-button"><img src="assets/svg/x-solid.svg"></button>
+                                    </td>
+                                </tr> -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="checkout-footer">
+                        <div class="checkout-prices">
+                            <div class="checkout-subtotal">
+                                <div class="checkout-subtotal-price">
+                                    <p>Subtotal Price:</p><span>0</span>
+                                </div>
+                                <div class="checkout-subtotal-price">
+                                    <p>Shipping Fee:</p><span class="checkout-fee">0</span>
+                                </div>
+                            </div>
+                            <div class="checkout-total-price">
+                                <h3>Total</h3><span>0</span>
+                            </div>
+                            <div class="checkout-total-amount">
+                                <h3>Total Items in Cart</h3><span>0</span>
+                            </div>
+                        </div>
+                        <a href="store.html" class="checkout-back">
+                            <img src="assets/svg/angle-left-solid.svg">Continue Shopping
+                        </a>
+                    </div>
+                </div>
+                <div class="checkout-payment">
+                    <div class="checkout-payment-container">
+                        <div class="error-popup-box"><span>Something went wrong</span>
+                            <img class="popup-x-button" src="assets/svg/x-solid.svg">
+                        </div>
+                        <div class="checkout-header payment">
+                            <h1>Payment Info</h1>
+                        </div>
+                        <h4>Payment Method</h4>
+                        <div class="payment-method-list">
+                            <div class="payment-method">
+                                <input type="radio" value="PayPal" id="paypal" name="method" checked>
+                                <label for="paypal"><img src="assets/svg/paypal-brands.svg">PayPal</label>
+                            </div>
+                            <div class="payment-method">
+                                <input type="radio" value="Cash on Deliver" id="cod" name="method">
+                                <label for="cod"><img src="assets/svg/truck-solid.svg">Cash on Delivery</label>
+                            </div>
+                        </div>
+                        <div class="checkout-input">
+                            <label for="full-name">Name as Signature:</label>
+                            <input type="text" id="full-name" placeholder="Full Name">
+                        </div>
+                        <div class="checkout-input">
+                            <label for="phone-number">Phone Number:</label>
+                            <input type="number" id="phone-number" placeholder="Phone Number">
+                        </div>
+                        <div class="checkout-input">
+                            <label for="voucher">Voucher:</label>
+                            <input type="text" id="voucher" placeholder="(Optional)Vouchers">
+                        </div>
+                        <button class="checkout-confirm">Confirm Check Out</button>
+                    </div>
+                </div>
+                <class class="final-confirm-popup">
+                    <div class="final-confirm-title">
+                        <h1>Finalize your Order</h1>
+                    </div>
+                    <div class="final-confirm-content">
+                        <div class="final-confirm-box">
+                            <!-- <div class="final-confirm voucher">
+                                <h3>Voucher Discount:</h3>
+                                <p>0</p>
+                            </div> -->
+                            <div class="final-confirm price">
+                                <h3>Overall Total Price:</h3>
+                                <p>0</p>
+                            </div>
+                            <div class="final-confirm amount">
+                                <h3>Overall Item Ordered:</h3>
+                                <p>0</p>
+                            </div>
+                        </div>
+                        <div class="final-confirm-box">
+                            <div class="final-confirm name">
+                                <h3>Name of Recipient:</h3>
+                                <p>Placehold Placeholderson</p>
+                            </div>
+                            <div class="final-confirm phone">
+                                <h3>Phone Number:</h3>
+                                <p>09090909090</p>
+                            </div>
+                            <div class="final-confirm method">
+                                <h3>Delievery Method:</h3>
+                                <p>PayPal</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="final-confirm-footer">
+                        <button class="final-confirm-button no">Return</button>
+                        <button class="final-confirm-button yes">Confirm</button>
+                    </div>
+                </class>
+                <div class="page-blocker"></div>
+                <div class="purchase-done">
+                    <div class="check-mark">&#10004</div>
+                    <div class="purchase-done-buttons">
+                        <a href="store.html">Continue Shopping</a>
+                        <a href="profile-page.html">Go to<br>Profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="assets/script/script.js"></script>
+    <script src="assets/script/checkout.js"></script>
+</body>
+
+</html>

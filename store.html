@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>OVO - Men</title>
+    <link href="assets/style.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">OVO</div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <!-- <li><a href="#">Limited</a></li>
+                    <li><a href="#">Sales</a></li> -->
+                </ul>
+            </nav>
+            <div class="side-header">
+                <div class="side-content cart">
+                    <span class="material-symbols-outlined">
+                        shopping_cart
+                    </span>
+                    <div class="mini-cart-current-count hide">0</div>
+                </div>
+                <div class="mini-cart-box hide">
+                    <div class="mini-cart-box-colapse">
+                        <span class="material-symbols-outlined">
+                            close
+                        </span>
+                    </div>
+                    <div class="mini-cart-status">
+                        <h4>Current Items On Cart:</h4>
+                    </div>
+                    <div class="mini-cart-product-container">
+                        <!-- <div class="mini-cart-product">
+                            <div class="mini-product-img">
+                                <img src="https://via.placeholder.com/150">
+                            </div>
+                            <div class="mini-product-description">
+                                <div class="mini-product-name">LoremLoremLoremLoremLorem</div>
+                                <div class="mini-product-price">1499</div>
+                            </div>
+                            <div class="mini-product-remove">Remove from Cart</div>
+                        </div> -->
+                    </div>
+                    <a href="checkout.html" class="mini-cart-show-more">
+                        <h4>Go to Checkout...</h4>
+                    </a>
+                </div>
+                <div class="side-content profile">
+                    <span class="material-symbols-outlined">
+                        person
+                    </span>
+                </div>
+                <div class="mini-profile-box-container">
+                    <div class="mini-profile-box">
+                        <div class="mini-profile-name">Placeholder</div>
+                        <a href="profile-page.html" class="mini-profile home">
+                            <span>My Account</span>
+                        </a>
+                        <a href="checkout.html" class="mini-profile orders">
+                            <span>My Orders</span>
+                        </a>
+                        <button class="mini-profile logout">Logout</button>
+                        <div class="confirmation-box">
+                            <h4>Are you sure you want to Logout?</h4>
+                            <button class="confirm no">No</button>
+                            <button class="confirm yes">Yes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="credential-container">
+        <div class="credential login"><a href="credentials.html">Login</a></div>
+        <div class="credential sign"><a href="credentials.html">Sign Up</a></div>
+    </div>
+    <main>
+        <!-- <div class="shop-title">
+            <h1>Men</h1>
+            later - theme = spring, summer, japan
+        </div> -->
+        <div class="standard-sec">
+            <!-- side menu -->
+            <div class="side-menu-container">
+                <div class="side-menu-wrapper">
+                    <h1>Menu</h1>
+                    <!-- category 1 - Price -->
+                    <div class="side-menu-category">
+                        <div class="side-menu-name">
+                            <h3>Price Range Filter</h3>
+                        </div>
+                        <div class="side-price-filter">
+                            <!-- Slider -->
+                            <!-- <div>
+                                <input type="range" min="0" max="10000" value="4000">
+                            </div> -->
+                            <!-- Textbox -->
+                            <div class="price-range-container">
+                                <input class="price-range" name="min" type="number" placeholder="Min" min="0"
+                                    max="10000">
+                                <span>to</span>
+                                <input class="price-range" name="max" type="number" placeholder="Max" min="0"
+                                    max="10000">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- category 2 - Type -->
+                    <div class="side-menu-category">
+                        <div class="side-menu-name">
+                            <h3>Shirt Type</h3>
+                        </div>
+                        <div class="side-menu-list">
+                            <div class="side-menu-content">
+                                <div class="side-menu-checkbox">
+                                    <input class="custom-box" type="checkbox" name="type" id="t-shirt" value="t-shirt">
+                                    <label for="t-shirt">
+                                        <p>T-shirt</p>
+                                    </label>
+                                </div>
+                                <div class="side-menu-items-stock">
+                                    <p class="type counter">(5)</p>
+                                </div>
+                            </div>
+                            <div class="side-menu-content">
+                                <div class="side-menu-checkbox">
+                                    <input class="custom-box" type="checkbox" name="type" id="polo" value="polo">
+                                    <label for="polo">
+                                        <p>Polo</p>
+                                    </label>
+                                </div>
+                                <div class="side-menu-items-stock">
+                                    <p class="type counter">(5)</p>
+                                </div>
+                            </div>
+                            <div class="side-menu-content">
+                                <div class="side-menu-checkbox">
+                                    <input class="custom-box" type="checkbox" name="type" id="turtleneck"
+                                        value="turtleneck">
+                                    <label for="turtleneck">
+                                        <p>Turtleneck</p>
+                                    </label>
+                                </div>
+                                <div class="side-menu-items-stock">
+                                    <p class="type counter">(5)</p>
+                                </div>
+                            </div>
+                            <div class="side-menu-content">
+                                <div class="side-menu-checkbox">
+                                    <input class="custom-box" type="checkbox" name="type" id="jacket" value="jacket">
+                                    <label for="jacket">
+                                        <p>Jacket</p>
+                                    </label>
+                                </div>
+                                <div class="side-menu-items-stock">
+                                    <p class="type counter">(5)</p>
+                                </div>
+                            </div>
+                            <div class="side-menu-content">
+                                <div class="side-menu-checkbox">
+                                    <input class="custom-box" type="checkbox" name="type" id="hoodie" value="hoodie">
+                                    <label for="hoodie">
+                                        <p>Hoodie</p>
+                                    </label>
+                                </div>
+                                <div class="side-menu-items-stock">
+                                    <p class="type counter">(5)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- category 3- Size -->
+                    <div class="side-menu-category">
+                        <div class="side-menu-name">
+                            <h3>Size</h3>
+                        </div>
+                        <div class="side-menu-list">
+                            <div class="side-menu-content">
+                                <div class="side-menu-checkbox">
+                                    <input class="custom-box" type="checkbox" name="size" id="xs" value="xs">
+                                    <label for="xs">
+                                        <p>XS</p>
+                                    </label>
+                                </div>
+                                <div class="side-menu-items-stock">
+                                    <p class="size counter">(5)</p>
+                                </div>
+                            </div>
+                            <div class="side-menu-content">
+                                <div class="side-menu-checkbox">
+                                    <input class="custom-box" type="checkbox" name="size" id="s" value="s">
+                                    <label for="s">
+                                        <p>S</p>
+                                    </label>
+                                </div>
+                                <div class="side-menu-items-stock">
+                                    <p class="size counter">(5)</p>
+                                </div>
+                            </div>
+                            <div class="side-menu-content">
+                                <div class="side-menu-checkbox">
+                                    <input class="custom-box" type="checkbox" name="size" id="m" value="m">
+                                    <label for="m">
+                                        <p>M</p>
+                                    </label>
+                                </div>
+                                <div class="side-menu-items-stock">
+                                    <p class="size counter">(5)</p>
+                                </div>
+                            </div>
+                            <div class="side-menu-content">
+                                <div class="side-menu-checkbox">
+                                    <input class="custom-box" type="checkbox" name="size" id="l" value="l">
+                                    <label for="l">
+                                        <p>L</p>
+                                    </label>
+                                </div>
+                                <div class="side-menu-items-stock">
+                                    <p class="size counter">(5)</p>
+                                </div>
+                            </div>
+                            <div class="side-menu-content">
+                                <div class="side-menu-checkbox">
+                                    <input class="custom-box" type="checkbox" name="size" id="xl" value="xl">
+                                    <label for="xl">
+                                        <p>XL</p>
+                                    </label>
+                                </div>
+                                <div class="side-menu-items-stock">
+                                    <p class="size counter">(5)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- category 4 - Brand -->
+                    <div class="side-menu-category">
+                        <div class="side-menu-name">
+                            <h3>Brand</h3>
+                        </div>
+                        <div class="side-menu-list">
+                            <div class="side-menu-content">
+                                <div class="side-menu-checkbox">
+                                    <input class="custom-box" type="checkbox" name="brand" id="adidas" value="adidas">
+                                    <label for="adidas">
+                                        <p>Adidas</p>
+                                    </label>
+                                </div>
+                                <div class="side-menu-items-stock">
+                                    <p class="brand counter">(5)</p>
+                                </div>
+                            </div>
+                            <div class="side-menu-content">
+                                <div class="side-menu-checkbox">
+                                    <input class="custom-box" type="checkbox" name="brand" id="nike" value="nike">
+                                    <label for="nike">
+                                        <p>Nike</p>
+                                    </label>
+                                </div>
+                                <div class="side-menu-items-stock">
+                                    <p class="brand counter">(5)</p>
+                                </div>
+                            </div>
+                            <div class="side-menu-content">
+                                <div class="side-menu-checkbox">
+                                    <input class="custom-box" type="checkbox" name="brand" id="supreme" value="supreme">
+                                    <label for="supreme">
+                                        <p>Supreme</p>
+                                    </label>
+                                </div>
+                                <div class="side-menu-items-stock">
+                                    <p class="brand counter">(5)</p>
+                                </div>
+                            </div>
+                            <div class="side-menu-content">
+                                <div class="side-menu-checkbox">
+                                    <input class="custom-box" type="checkbox" name="brand" id="levi's" value="levi's">
+                                    <label for="levi's">
+                                        <p>Levi's</p>
+                                    </label>
+                                </div>
+                                <div class="side-menu-items-stock">
+                                    <p class="brand counter">(5)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <button class="price-filter-button">Filter</button> -->
+                </div>
+            </div>
+            <!-- shop content -->
+            <div class="shop-container">
+                <div class="shop-wrapper">
+                    <h1>Catalog</h1>
+                    <!-- header -->
+                    <div class="shop-header">
+                        <!-- search -->
+                        <div class="shop-search-container">
+                            <img class="search-icon" src="assets/svg/search-outline.svg">
+                            <input id="shop-search-box" name="search" type="textbox" placeholder="Search...">
+                        </div>
+                        <!-- dropdown sort by  -->
+                        <div class="shop-sort-container">
+                            <select id="shop-sort" name="shop-sort">
+                                <option disabled selected>Sort By</option>
+                                <!-- <option value="relevance">Relevance</option> -->
+                                <option value="increasing">Increasing</option>
+                                <option value="decreasing">Decreasing</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="current-searching">
+                    </div>
+                    <div class="shop-body">
+                        <!-- shop body start -->
+                        <!-- <div class="item-container">
+                            <div class="item-img">
+                                <img src="assets/img/store-men/white-shirt.png" alt="some-img">
+                            </div>
+                            <div class="item-description">
+                                <div class="item-details">
+                                    <div class="item-name">Lorem Designer ShirtLorem Designer ShirtLorem Designer
+                                        ShirtLorem Designer Shirt</div>
+                                    <div class="item-price">1299</div>
+                                    <div class="item-brand">Adidas</div>
+                                    <div class="item-type">T-shirt</div>
+                                    <div class="item-size">L</div>
+                                </div>
+                                <div class="item-button">
+                                    <img class="buy-icon" src="https://via.placeholder.com/150">
+                                </div>
+                            </div>
+                            <a href="#">
+                                <div class="item-more-details">More Details</div>
+                            </a>
+                        </div>
+                        <div class="item-container">
+                            <div class="item-img">
+                                <img src="assets/img/store-men/white-shirt.png" alt="some-img">
+                            </div>
+                            <div class="item-description">
+                                <div class="item-details">
+                                    <div class="item-name">Lorem Designer ShirtLorem Designer ShirtLorem Designer
+                                        ShirtLorem Designer Shirt</div>
+                                    <div class="item-price">1199</div>
+                                    <div class="item-brand">Levi's</div>
+                                    <div class="item-type">T-shirt</div>
+                                    <div class="item-size">L</div>
+                                </div>
+                                <div class="item-button">
+                                    <img class="buy-icon" src="https://via.placeholder.com/150">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-container">
+                            <div class="item-img">
+                                <img src="assets/img/store-men/white-shirt.png" alt="some-img">
+                            </div>
+                            <div class="item-description">
+                                <div class="item-details">
+                                    <div class="item-name">Lorem Designer ShirtLorem Designer ShirtLorem Designer
+                                        ShirtLorem Designer Shirt</div>
+                                    <div class="item-price">499</div>
+                                    <div class="item-brand">Adidas</div>
+                                    <div class="item-type">T-shirt</div>
+                                    <div class="item-size">XS</div>
+                                </div>
+                                <div class="item-button">
+                                    <img class="buy-icon" src="https://via.placeholder.com/150">
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="product-side-details-container hide">
+                <div class="product-side-details">
+                    <div class="product-side-img">
+                        <img src="https://via.placeholder.com/150">
+                    </div>
+                    <div class="product-side-name">
+                        <h2>Name</h2>
+                    </div>
+                    <div class="product-side-desc type">
+                        <h3>Type</h3>
+                        <p>Shirt</p>
+                    </div>
+                    <div class="product-side-desc size">
+                        <h3>Size</h3>
+                        <p>XL</p>
+                    </div>
+                    <div class="product-side-desc brand">
+                        <h3>Brand</h3>
+                        <p>Adidas</p>
+                    </div>
+                    <div class="product-side-desc description">
+                        <h4>Description</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit laborum cumque rem
+                            dolorum, dolores ex, iure voluptatum eos voluptatem laboriosam officiis dolorem corrupti
+                            dolor? Dolorem veniam tempore exercitationem vel porro!</p>
+                    </div>
+                    <button class="product-side-cart">
+                        <div class="product-side-cart-icon">
+                            <span class="material-symbols-outlined">
+                                shopping_basket
+                            </span>
+                        </div>
+                        <span class="product-side-price">5000</span> - Add to cart
+                    </button>
+                    <div class="product-side-back-icon">
+                        <span class="material-symbols-outlined">
+                            forward
+                        </span>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <script src="assets/script/shop-script.js"></script>
+    <script src="assets/script/script.js"></script>
+</body>
+
+</html>

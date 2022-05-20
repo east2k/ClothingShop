@@ -1,0 +1,56 @@
+winter, summer, 
+lookin for something?
+we got you covered!!
+winter, summer
+
+discover:
+more about us:
+lookin for something?
+we gatchu
+summer, winter, ocation
+
+
+duration in shop
+
+
+click register
+    box go to right
+    img go to left
+click login
+    box go to left
+    img go to right
+
+
+goal tom
+    add to cart / 
+    mini checkout box /
+    make checkout page /
+    get total items, price /
+
+bonus
+    add discount 
+
+goal tom 
+    home function - low prio
+    footer - low prio 
+    discover function -low prio
+try
+    login - localStorage /
+
+goal tom
+    shop products save in localStorage /
+    connect account with cart orders / 
+    account page - order history, items ordered total, optimize profile /
+    fix checkout page /
+    fix home and discover (buttons, images, sections)
+    fix shop variety(gender, season, limited, hot)
+    fix shop gender 
+    add more product
+    product images
+    polish -- change color/font/images
+
+bonus  
+    better header, div following scroll
+
+
+    check if saved orders, try to see if
