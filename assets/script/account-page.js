@@ -13,7 +13,7 @@ const checkSavedOrders = () => {
     }
     if (storedCartList === undefined) {
         // console.log("No User");
-        window.location.href = "home.html";
+        window.location.href = "index.html";
     }
 }
 
@@ -30,7 +30,7 @@ window.addEventListener('load', () => {
     }
     if (currentProfile === undefined) {
         console.log("No User");
-        window.location.href = "home.html";
+        window.location.href = "index.html";
     }
 });
 

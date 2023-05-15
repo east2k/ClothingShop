@@ -56,7 +56,7 @@ loginButton.addEventListener('click', () => {
             loginPopupText.innerHTML = "Successfully Logged In";
             loginPopup.classList.add("active");
             loginXButton.addEventListener('click', () => {
-                window.location.href = "home.html";
+                window.location.href = "index.html";
             })
             // console.log("logedin");
             break;

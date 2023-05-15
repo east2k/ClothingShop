@@ -240,7 +240,6 @@ const displayProducts = (filteredList) => {
             shopBody.removeChild(child);
             child = shopBody.lastElementChild;
         }
-
     }
     // console.log(filteredList);
     if (filteredList === null) {
